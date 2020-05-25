@@ -1,0 +1,18 @@
+<h2>Member Details</h2>
+
+<hr />
+<div *ngIf="member">
+  <div>
+    <label><b>Name: </b></label> {{ member.name }}
+  </div>
+  <div>
+    <label><b>Bio: </b></label> {{ member.bio }}
+  </div>
+  <div>
+    <label><b>Age: </b></label> {{ member.age }}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Member List</button><br>
